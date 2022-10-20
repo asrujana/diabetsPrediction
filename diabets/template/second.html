@@ -1,0 +1,24 @@
+<html>
+    <head>
+         
+            
+    </head>
+             
+    <body>
+            
+        <center>   
+        <p>DIABETS PREDICTION {{ prediction }}  
+        </p>
+        
+       {% if prediction == '1'%}
+            <h2> having diabetes</h2>
+            <img src="https://thumbs.dreamstime.com/b/sad-glucometer-turquoise-background-human-hand-holding-face-its-monitor-illustrating-bad-blood-sugar-levels-diabetes-84978348.jpg" width="300px" height="300px">
+            <h2><a href="diet.html">follow diet to control</a>  </h2>
+            
+        {% elif prediction == '0'%}
+            <h1>happy no diabetics</h1>
+            <img src="https://cdn.mdedge.com/files/s3fs-public/emoji%20thumbs%20up_web.jpg" width="300px" height="300px">
+      {% endif %}
+    </center> 
+    </body>
+</html>
